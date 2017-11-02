@@ -17,8 +17,9 @@ nav {
   background-color: #A67755;
 }
 
-nav h3 {
-  font-size: 25px;
+nav img {
+  margin-left: 50px;
+  width: 60px;
 }
 nav a {
   font-size: 14px;
@@ -163,6 +164,7 @@ article div a {
   border: 3px white solid;
   border-radius: 3px;
   padding: 12.5px 40px;
+  color: white;
 }
 
 article div:hover img {
@@ -184,7 +186,7 @@ article div:hover h1 {
 
 article div a:hover {
   background-color: white;
-  color: #5873B2;
+  color: #D7B44D;
 }
 
 .heading h1 {
