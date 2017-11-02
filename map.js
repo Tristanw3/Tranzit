@@ -1,7 +1,7 @@
 jQuery(function($) {
     // Asynchronously Load the map API
     var script = document.createElement('script');
-    script.src = "//maps.googleapis.com/maps/api/js?sensor=false&callback=initialize";
+    script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyC670-QKb9-0B869p8HZ-UmX0VyNCvBvNc&sensor=false&callback=initialize";
     document.body.appendChild(script);
 });
 
@@ -19,17 +19,27 @@ function initialize() {
     // Multiple Markers
     var markers = [
         ['Macquarie University, Sydney', -33.7757052,151.1130988],
-        ['Macquarie Centre, Sydney', -33.7767314,151.1191038]
+        ['Macquarie Centre, Sydney', -33.7767314,151.1191038],
+        ['Balaclava Rd after university Av', -33.7769876, 151.110085],
+        ['Khartoum Rd Before Talavera Rd', -33.7795375, 151.1243744]
     ];
 
     // Info Window Content
     var infoWindowContent = [
         ['<div class="info_content">' +
-        '<h3>London Eye</h3>' +
-        '<p>The London Eye is a giant Ferris wheel situated on the banks of the River Thames. The entire structure is 135 metres (443 ft) tall and the wheel has a diameter of 120 metres (394 ft).</p>' +        '</div>'],
+        '<h3>Macquarie University Cycle Hub</h3>' +
+        '<p>Macquarie University Cycle Hub has 10 cycle ports with 5 electric cycles and 5 manual cycles. </p>' +        '</div>'],
         ['<div class="info_content">' +
-        '<h3>Palace of Westminster</h3>' +
-        '<p>The Palace of Westminster is the meeting place of the House of Commons and the House of Lords, the two houses of the Parliament of the United Kingdom. Commonly known as the Houses of Parliament after its tenants.</p>' +
+        '<h3>Macquarie Centre Cycle Hub</h3>' +
+        '<p>Macquarie Centre Cycle Hub has 30 cycle ports with 15 electric cycles and 15 manual cycle.</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>Balaclava Rd after university Av</h3>' +
+        '<p>Really close to the Balaclava Rd bus station, has total of 15 ports with 8 electric cycles and 7 pedal cycles.</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>Khartoum Rd Before Talavera Rd</h3>' +
+        '<p>Really close to the Khartoum Rd bus station, has total of 10 ports with 6 electric cycles and 4 pedal cycles.</p>' +
         '</div>']
     ];
 
