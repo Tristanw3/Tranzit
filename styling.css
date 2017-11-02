@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Arvo', serif;
+}
+
+nav {
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  opacity: 0;
+  transform: translateY(12px);
+  animation: 0.7s slidefade 0s forwards;
+
+}
+
+@keyframes slidefade {
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+h3 {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.firstBackground {
+  height: 100vh;
+  background-image: url("assets/bike1.jpeg");
+  background-color: black;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 200px;
+}
+
+.firstBackground a {
+  border: 3px white solid;
+  border-radius: 3px;
+  margin: 30px 0 200px 0;
+  padding: 12.5px 40px;
+  color: white;
+}
+
+.firstBackground a:hover {
+  background-color: white;
+  color: purple;
+}
+
+.firstBackground h1, .firstBackground p, .firstBackground a {
+  opacity: 0;
+  transform: translateX(12px);
+  animation: 0.7s slidefade 0s forwards;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0 0 10px 0;
+}
+
+.logoBar {
+  height: 600px;
+}
+
+
+@media (max-width: 480px) {
+  .firstBackground {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#map_wrapper {
+    height: 400px;
+}
+
+#map_canvas {
+    width: 100%;
+    height: 100%;
+}
