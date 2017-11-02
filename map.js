@@ -16,12 +16,14 @@ function initialize() {
     map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
     map.setTilt(45);
 
+
     // Multiple Markers
     var markers = [
         ['Macquarie University, Sydney', -33.7757052,151.1130988],
         ['Macquarie Centre, Sydney', -33.7767314,151.1191038],
-        ['Balaclava Rd after university Av', -33.7769876, 151.110085],
-        ['Khartoum Rd Before Talavera Rd', -33.7795375, 151.1243744]
+        ['176 Epping Rd bus station', -33.7836515, 151.115864],
+        ['Khartoum Rd Before Talavera Rd', -33.7795375, 151.1243744],
+        ['Balaclava Rd Near Koorong St', -33.7788527, 151.1054914]
     ];
 
     // Info Window Content
@@ -31,15 +33,19 @@ function initialize() {
         '<p>Macquarie University Cycle Hub has 10 cycle ports with 5 electric cycles and 5 manual cycles. </p>' +        '</div>'],
         ['<div class="info_content">' +
         '<h3>Macquarie Centre Cycle Hub</h3>' +
-        '<p>Macquarie Centre Cycle Hub has 30 cycle ports with 15 electric cycles and 15 manual cycle.</p>' +
+        '<p>Macquarie Centre Cycle Hub has 10 cycle ports with 7 electric cycles and 3 manual cycle.</p>' +
         '</div>'],
         ['<div class="info_content">' +
-        '<h3>Balaclava Rd after university Av</h3>' +
-        '<p>Really close to the Balaclava Rd bus station, has total of 15 ports with 8 electric cycles and 7 pedal cycles.</p>' +
+        '<h3>176 Epping Rd bus station</h3>' +
+        '<p>Really close to the Epping Rd bus station, has total of 10 ports with 4 electric cycles and 6 pedal cycles.</p>' +
         '</div>'],
         ['<div class="info_content">' +
         '<h3>Khartoum Rd Before Talavera Rd</h3>' +
         '<p>Really close to the Khartoum Rd bus station, has total of 10 ports with 6 electric cycles and 4 pedal cycles.</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>Balaclava Rd Near Koorong St</h3>' +
+        '<p>Connected to the Koorong st bus station, has a total of 10 ports with 5 electric cycles and 4 pedal cycles..</p>' +
         '</div>']
     ];
 
