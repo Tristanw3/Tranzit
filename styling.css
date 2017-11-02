@@ -8,14 +8,28 @@
 }
 
 nav {
-  font-size: 17px;
   display: flex;
   align-items: center;
   padding: 20px 0;
   opacity: 0;
   transform: translateY(12px);
   animation: 0.7s slidefade 0s forwards;
+  background-color: #A67755;
+}
 
+nav h3 {
+  font-size: 25px;
+}
+nav a {
+  font-size: 14px;
+}
+
+nav * {
+  color: #D7B44D;
+}
+
+nav *:hover {
+  color: white;
 }
 
 @keyframes slidefade {
@@ -26,8 +40,11 @@ nav {
 }
 
 h3 {
-  flex-grow: 1;
   margin-left: 20px;
+}
+
+.navSpacer {
+  flex-grow: 1;
 }
 
 a {
@@ -59,9 +76,13 @@ a {
   color: white;
 }
 
+.firstBackground p {
+  color: white;
+}
+
 .firstBackground a:hover {
   background-color: white;
-  color: purple;
+  color: #D7B44D;
 }
 
 .firstBackground h1, .firstBackground p, .firstBackground a {
@@ -70,13 +91,15 @@ a {
   animation: 0.7s slidefade 0s forwards;
 }
 
+.heading * {
+  background-color: #726E6D;
+  color: #D7B44D;
+}
+
 h1 {
   font-size: 48px;
   margin: 0 0 10px 0;
-}
-
-.logoBar {
-  height: 600px;
+  color: white;
 }
 
 
@@ -89,6 +112,90 @@ h1 {
   }
 }
 
+article {
+  display: flex;
+}
+
+
+article div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 33vw;
+  overflow: hidden;
+
+
+}
+
+article div:nth-child(1) {
+  background-color: #D7AB55;
+}
+
+article div:nth-child(2) {
+  background-color: #D7AB55;
+}
+
+div img {
+  height: 100%;
+  width: 100%;
+}
+
+article div h1, article div a {
+  position: absolute;
+  opacity: 0;
+}
+
+article div:nth-child(1) h1, article div:nth-child(1) a {
+  transform: translateX(-100px);
+}
+
+article div:nth-child(2) h1, article div:nth-child(2) a {
+  transform: translateX(100px);
+}
+
+article div h1 {
+  font-size: 20px;
+}
+
+article div a {
+  border: 3px white solid;
+  border-radius: 3px;
+  padding: 12.5px 40px;
+}
+
+article div:hover img {
+  opacity: 0.3;
+  filter: grayscale(100%);
+}
+
+article div:hover h1, article div:hover a {
+  cursor: pointer;
+  transform: translate(0px, 25px);
+  opacity: 1;
+  transition: opacity 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550),
+              transform 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+
+article div:hover h1 {
+  transform: translate(0, -25px)
+}
+
+article div a:hover {
+  background-color: white;
+  color: #5873B2;
+}
+
+.heading h1 {
+  font-size: 22px;
+  border-bottom: 2px grey solid;
+  text-align: center;
+  padding: 15px 5px 0 0;
+  margin: 0;
+}
+
+
 #map_wrapper {
     height: 400px;
 }
@@ -96,4 +203,27 @@ h1 {
 #map_canvas {
     width: 100%;
     height: 100%;
+    filter: grayscale(70%);
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  height: 75px;
+  align-items: center;
+  background-color: #726E6D;
+
+}
+
+footer p {
+  font-size: 10px;
+  color: #D7B44D;
+  flex-grow: 1;
+  padding-left: 30px;
+}
+
+footer a {
+  font-size: 40px;
+  padding-right: 5px;
+  color: #D7B44D;
 }
