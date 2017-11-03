@@ -56,7 +56,7 @@ a {
 .firstBackground {
   height: 100vh;
   background-image: url("assets/bike1.jpeg");
-  background-color: black;
+  background-color: #726E6D;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
